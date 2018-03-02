@@ -1062,4 +1062,4 @@ I also preferred some things to work differently i.e request stub precedence.
 
 ## Copyright
 
-Copyright (c) 2009-2010 Bartosz Blimke. See LICENSE for details.
+Copyright (c) 2009-2018 Bartosz Blimke. See LICENSE for details.
