@@ -7,52 +7,35 @@ Library for stubbing and setting expectations on HTTP requests in Ruby.
 Features
 --------
 
-* Stubbing HTTP requests at low http client lib level (no need to change tests when you change HTTP library)
-* Setting and verifying expectations on HTTP requests
-* Matching requests based on method, URI, headers and body
-* Smart matching of the same URIs in different representations (also encoded and non encoded forms)
-* Smart matching of the same headers in different representations.
-* Support for Test::Unit
-* Support for RSpec
-* Support for MiniTest
-
-Supported HTTP libraries
-------------------------
-
-* Net::HTTP and libraries based on Net::HTTP (i.e RightHttpConnection, REST Client, HTTParty)
-* HTTPClient
-* Patron
-* EM-HTTP-Request
-* Curb (currently only Curb::Easy)
-* Typhoeus (currently only Typhoeus::Hydra)
-* Excon
-* HTTP Gem
-* Manticore
-
-Supported Ruby Interpreters
----------------------------
-
-* MRI 2.2
-* MRI 2.3
-* MRI 2.4
-* MRI 2.5
-* JRuby
-* Rubinius
+* **Stubbing HTTP requests** at low http client lib level (no need to change tests when you change HTTP library)
+* **Setting** and **verifying expectations** on HTTP requests
+* **Matching requests** based on method, URI, headers and body
+* **Smart matching** of the **same URIs** in different representations (also encoded and non encoded forms)
+* **Smart matching** of the **same headers** in different representations.
+* Support for [Test::Unit](#testunit), [RSpec](#rspec), [MiniTest](#minitest) and [Cucumber](#cucumber)
+* Supported **HTTP libraries**:
+  * Net::HTTP and libraries based on Net::HTTP (i.e RightHttpConnection, REST Client, HTTParty)
+  * HTTPClient
+  * Patron
+  * EM-HTTP-Request
+  * Curb (currently only Curb::Easy)
+  * Typhoeus (currently only Typhoeus::Hydra)
+  * Excon
+  * HTTP Gem
+  * Manticore
+* Supported **Ruby Interpreters**: MRI 2.2, MRI 2.3, MRI 2.4, MRI 2.5, JRuby, Rubinius
 
 ## Installation
 
     gem install webmock
 
-### or to install the latest development version from github master
+**Or** to install the latest development version from github master
 
     git clone http://github.com/bblimke/webmock.git
     cd webmock
     rake install
 
-## Upgrading from v1.x to v2.x
-
-WebMock 2.x has changed somewhat since version 1.x. Changes are listed in [CHANGELOG.md](CHANGELOG.md)
-
+## Usage
 ### Test::Unit
 
 Add the following code to `test/test_helper.rb`
