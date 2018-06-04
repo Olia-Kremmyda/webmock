@@ -79,14 +79,14 @@ include WebMock::API
 WebMock.enable!
 ```
 
-## Examples
+### Examples
 
 
 
-## Stubbing
+#### Stubbing
 
 
-### Stubbed request based on uri only and with the default response
+##### Stubbed request based on uri only and with the default response
 
 ```ruby
 stub_request(:any, "www.example.com")
